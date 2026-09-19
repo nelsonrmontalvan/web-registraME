@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RegistraME V-Pro · Gestión escolar completa</title>
+  <meta name="description" content="RegistraME V-Pro: asistencia, planeamiento, bitácora, informe SEA y alertas tempranas en una sola plataforma para tu institución educativa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23C96442'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='13' fill='white'%3ERM%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand">
+        <span class="brand-mark">RM</span>
+        <span class="brand-name">RegistraME<sup class="brand-pro">PRO</sup></span>
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#como-empezar">Cómo empezar</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#planes">Planes</a>
+        <a href="#galeria">Galería</a>
+        <a href="#tutoriales">Tutoriales</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="https://registra-me.vercel.app" target="_blank" rel="noopener">Acceder</a>
+        <a class="btn btn-primary" href="#planes">Probar demo</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="dock-title">El control total de tu <em>aula</em>.</h1>
+        <div class="hero-pill">
+          <span class="pill">RegistraME V-Pro · Gestión escolar</span>
+        </div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="lede">Asistencia, planeamiento, bitácora, informe SEA, alertas tempranas y administración — todo tu centro educativo en una sola plataforma, lista para usar.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary btn-lg" href="https://wa.me/50671023115?text=Hola%20Ing.%20Nelson%2C%20quiero%20probar%20la%20demo%20de%20RegistraME%20V-Pro" target="_blank" rel="noopener">
+                Probar demo gratis
+              </a>
+              <a class="btn btn-ghost btn-lg" href="#funciones">Explorar funciones</a>
+            </div>
+            <p class="hero-note">Demo de 3 días · Sin tarjeta · Soporte directo por WhatsApp</p>
+
+            <div class="countdown" data-countdown="2026-10-19T00:00:00">
+              <p class="countdown-label">La promoción de lanzamiento termina en</p>
+              <div class="countdown-cards">
+                <div class="cd-card"><span class="cd-num" data-unit="dias">0</span><span class="cd-unit">Días</span></div>
+                <div class="cd-card"><span class="cd-num" data-unit="horas">0</span><span class="cd-unit">Horas</span></div>
+                <div class="cd-card"><span class="cd-num" data-unit="minutos">0</span><span class="cd-unit">Min</span></div>
+                <div class="cd-card"><span class="cd-num" data-unit="segundos">0</span><span class="cd-unit">Seg</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="browser">
+              <div class="browser-bar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="browser-url">registra-me.vercel.app</span>
+              </div>
+              <img src="assets/shot-dashboard.png" alt="Dashboard de RegistraME V-Pro" loading="eager">
+            </div>
+            <div class="hero-chip chip-1">
+              <span class="chip-icon chip-green"></span>
+              Asistencia 96%
+            </div>
+            <div class="hero-chip chip-2">
+              <span class="chip-icon chip-red"></span>
+              Alerta pendiente
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Asistencia</span><i>•</i>
+          <span>Planeamiento</span><i>•</i>
+          <span>Bitácora</span><i>•</i>
+          <span>Informe SEA</span><i>•</i>
+          <span>Alertas Tempranas</span><i>•</i>
+          <span>Mi Aula</span><i>•</i>
+          <span>Horarios</span><i>•</i>
+          <span>Informe al Hogar</span><i>•</i>
+          <span>Asistencia</span><i>•</i>
+          <span>Planeamiento</span><i>•</i>
+          <span>Bitácora</span><i>•</i>
+          <span>Informe SEA</span><i>•</i>
+          <span>Alertas Tempranas</span><i>•</i>
+          <span>Mi Aula</span><i>•</i>
+          <span>Horarios</span><i>•</i>
+          <span>Informe al Hogar</span><i>•</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO EMPEZAR -->
+    <section class="section" id="como-empezar">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Cómo empezar</span>
+          <h2>Tres pasos hacia tu aula digital.</h2>
+        </div>
+        <div class="steps">
+          <article class="step" data-reveal="left">
+            <span class="step-num">01</span>
+            <h3>Solicita tu demo</h3>
+            <p>Escríbenos por WhatsApp y en minutos te creamos tu acceso de prueba por 3 días, sin tarjeta ni compromiso.</p>
+          </article>
+          <article class="step" data-reveal="right">
+            <span class="step-num">02</span>
+            <h3>Explora la plataforma</h3>
+            <p>Registra tu institución, secciones y materias. Prueba la matriz de asistencia, la bitácora y los informes con datos reales.</p>
+          </article>
+          <article class="step" data-reveal="left">
+            <span class="step-num">03</span>
+            <h3>Activa tu plan</h3>
+            <p>Cuando tomes la decisión, elegís la licencia a tu medida (1 año, 3 años o vitalicio) y seguimos dándote soporte directo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUNCIONES -->
+    <section class="section section-alt" id="funciones">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Funciones</span>
+          <h2>En serio útil, todos los días.</h2>
+          <p class="section-sub">Cada módulo resuelve una tarea real del docente y del administrador de tu centro educativo.</p>
+        </div>
+        <div class="features">
+          <article class="feature" data-reveal="left">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></span>
+            <h3>Dashboard e indicadores</h3>
+            <p>Panel de control con el resumen de tus secciones, instituciones y % de asistencia calculado en tiempo real desde tu base de datos.</p>
+          </article>
+          <article class="feature" data-reveal="up">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M9 15l2 2 4-4"/></svg></span>
+            <h3>Matriz de Asistencia</h3>
+            <p>Pase de lista por sección y materia con rango de fechas: porcentaje de asistencia y lecciones por día al instante.</p>
+          </article>
+          <article class="feature" data-reveal="right">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span>
+            <h3>Planeamiento y rubros</h3>
+            <p>Asignaturas con rubros y porcentajes configurados por materia para mantener tu planeamiento al día.</p>
+          </article>
+          <article class="feature" data-reveal="left">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg></span>
+            <h3>Bitácora de Incidencias</h3>
+            <p>Registra incidencias individuales o grupales con estados pendiente/cerrado, buscador por estudiante y sección.</p>
+          </article>
+          <article class="feature" data-reveal="up">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M14 10l8-8"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+            <h3>Informe SEA e Informe al Hogar</h3>
+            <p>Documentos oficiales emitidos automáticamente en PDF con el historial de asistencia de cada estudiante.</p>
+          </article>
+          <article class="feature" data-reveal="right">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></span>
+            <h3>Alertas Tempranas</h3>
+            <p>La plataforma te recuerda los pases de lista pendientes y señala casos con baja asistencia para actuar a tiempo.</p>
+          </article>
+          <article class="feature" data-reveal="left">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+            <h3>Mi Aula y Horarios</h3>
+            <p>Bloques horarios por institución, sección y materia con lecciones por día y período de vigencia.</p>
+          </article>
+          <article class="feature" data-reveal="up">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M17 11l2 2 4-4"/></svg></span>
+            <h3>Administración de usuarios</h3>
+            <p>Genera accesos para tu equipo con planes Demo, 1 año, 3 años o Vitalicio y controla la vigencia de cada licencia.</p>
+          </article>
+          <article class="feature" data-reveal="right">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></span>
+            <h3>Ayuda y soporte</h3>
+            <p>Atención humana y directa por WhatsApp y correo, de manos del desarrollador de la plataforma.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section class="section" id="planes">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Planes y licencias</span>
+          <h2>Un plan para cada institución.</h2>
+          <p class="section-sub">Comienza gratis con la demo. Aquí se solicitan los accesos; el administrador te genera tu cuenta al momento.</p>
+        </div>
+        <div class="plans">
+          <article class="plan">
+            <span class="plan-tag">Demo</span>
+            <h3>Prueba gratuita</h3>
+            <p class="plan-price">₡0<span>/ 3 días</span></p>
+            <ul>
+              <li>Acceso completo a la plataforma</li>
+              <li>1 institución de prueba</li>
+              <li>Secciones y materias ilimitadas</li>
+              <li>Soporte por WhatsApp</li>
+            </ul>
+            <a class="btn btn-ghost" href="https://wa.me/50671023115?text=Quiero%20la%20demo%20gratis%20de%20RegistraME%20V-Pro" target="_blank" rel="noopener">Solicitar demo</a>
+          </article>
+          <article class="plan">
+            <span class="plan-tag">Anual</span>
+            <h3>Licencia de 1 año</h3>
+            <p class="plan-price">₡15.000<span>/ año</span></p>
+            <ul>
+              <li>Todo lo de la plataforma Pro</li>
+              <li>Vigencia de 365 días renovable</li>
+              <li>Accesos para tu equipo docente</li>
+              <li>Soporte prioritario</li>
+            </ul>
+            <a class="btn btn-ghost" href="https://wa.me/50671023115?text=Quiero%20activar%20la%20licencia%20de%201%20a%C3%B1o%20de%20RegistraME%20V-Pro" target="_blank" rel="noopener">Elegir 1 año</a>
+          </article>
+          <article class="plan plan-featured">
+            <span class="plan-tag">Recomendado</span>
+            <h3>Licencia de 3 años</h3>
+            <p class="plan-price">₡30.000<span>/ 3 años</span></p>
+            <ul>
+              <li>Todo lo del plan de 1 año</li>
+              <li>Ahorro equivalente a 1 año</li>
+              <li>Actualizaciones incluidas</li>
+              <li>Capacitación inicial incluida</li>
+            </ul>
+            <a class="btn btn-primary" href="https://wa.me/50671023115?text=Quiero%20activar%20la%20licencia%20de%203%20a%C3%B1os%20de%20RegistraME%20V-Pro" target="_blank" rel="noopener">Elegir 3 años</a>
+          </article>
+          <article class="plan">
+            <span class="plan-tag">Pago único</span>
+            <h3>Vitalicio</h3>
+            <p class="plan-price">₡75.000<span>/ único</span></p>
+            <ul>
+              <li>Licencia de por vida sin renovaciones</li>
+              <li>Actualizaciones de la plataforma</li>
+              <li>Soporte continuo al administrador</li>
+              <li>Mejor valor a largo plazo</li>
+            </ul>
+            <a class="btn btn-ghost" href="https://wa.me/50671023115?text=Quiero%20activar%20la%20licencia%20vitalicia%20de%20RegistraME%20V-Pro" target="_blank" rel="noopener">Elegir vitalicio</a>
+          </article>
+        </div>
+        <p class="plans-note">¿Necesitas un plan institucional a medida o varias instituciones? Escríbenos y armamos una propuesta.</p>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section section-alt" id="galeria">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Galería</span>
+          <h2>Así se ve RegistraME en acción.</h2>
+          <p class="section-sub">Capturas de la plataforma real, con datos reales de instituciones de prueba.</p>
+        </div>
+        <div class="stream" aria-label="Corredor de capturas de la plataforma">
+          <div class="stream-scene">
+            <div class="stream-world"></div>
+          </div>
+        </div>
+        <p class="stream-hint">Haz clic en cualquier captura para verla a tamaño completo</p>
+      </div>
+    </section>
+
+    <!-- TUTORIALES -->
+    <section class="section" id="tutoriales">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Tutoriales</span>
+          <h2>Aprende el flujo de trabajo.</h2>
+        </div>
+        <div class="tutorials">
+          <article class="tutorial">
+            <span class="tutorial-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            </span>
+            <h3>Primeros pasos en RegistraME</h3>
+            <p>Desde tu acceso hasta tu primera sección creada.</p>
+            <span class="tutorial-badge">Guía</span>
+          </article>
+          <article class="tutorial">
+            <span class="tutorial-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l2 3v15H6V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            </span>
+            <h3>Registrar y consultar asistencia</h3>
+            <p>Pase de lista diario y porcentajes por período.</p>
+            <span class="tutorial-badge">Guía</span>
+          </article>
+          <article class="tutorial">
+            <span class="tutorial-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+            </span>
+            <h3>Registrar una incidencia</h3>
+            <p>Bitácora individual y grupal con estados y seguimiento.</p>
+            <span class="tutorial-badge">Guía</span>
+          </article>
+          <article class="tutorial">
+            <span class="tutorial-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </span>
+            <h3>Emitir Informe al Hogar</h3>
+            <p>Descarga el PDF oficial de asistencia por estudiante.</p>
+            <span class="tutorial-badge">Guía</span>
+          </article>
+        </div>
+        <div class="video-cta">
+          <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=TU_VIDEO_AQUI" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            Ver video presentación
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">FAQ</span>
+          <h2>Antes de empezar, lo más preguntado.</h2>
+        </div>
+        <div class="faq">
+          <details class="faq-item">
+            <summary>¿Cómo obtengo la demo gratis?</summary>
+            <p>Elígi el botón "Solicitar demo" o escríbenos por WhatsApp. El administrador te genera tu usuario y clave en minutos y te indica cómo ingresar.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Necesito instalar algo?</summary>
+            <p>No. RegistraME funciona 100% desde el navegador en computadora, tablet o celular. Solo necesitas tu acceso y conexión a internet.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Puedo registrar varias instituciones?</summary>
+            <p>Sí. La plataforma permite administrar varias instituciones y secciones desde una misma cuenta, ideal para docentes y administradores.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Los informes son documentos oficiales?</summary>
+            <p>Sí. El informe SEA y el Informe al Hogar se generan automáticamente en PDF con membrete de la plataforma, listos para imprimir o enviar.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Qué pasa cuando vence mi plan?</summary>
+            <p>Te avisamos antes de la vigencia de tu licencia. Puedes renovar de manera sencilla por WhatsApp sin perder tus datos, que se conservan.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Cómo contacto al soporte?</summary>
+            <p>Por WhatsApp al +506 7102 3115 o por correo a nelson.rmontalvan@gmail.com. Te atendemos directamente, sin bots.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section cta-final">
+      <div class="container">
+        <h2>¿Listo para digitalizar tu aula?</h2>
+        <p>Comienza tu demo gratuita hoy y mira la diferencia en menos de 5 minutos.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="https://wa.me/50671023115?text=Quiero%20la%20demo%20gratis%20de%20RegistraME%20V-Pro" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Solicitar demo por WhatsApp
+          </a>
+          <a class="btn btn-ghost btn-lg" href="https://registra-me.vercel.app" target="_blank" rel="noopener">Entrar a la plataforma</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand">
+          <span class="brand-mark">RM</span>
+          <span class="brand-name">RegistraME<sup class="brand-pro">PRO</sup></span>
+        </a>
+        <p>La plataforma de gestión escolar que pone el control de tu aula en tus manos.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Producto</h4>
+        <a href="#como-empezar">Cómo empezar</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#planes">Planes</a>
+        <a href="#galeria">Galería</a>
+      </div>
+      <div class="footer-col">
+        <h4>Recursos</h4>
+        <a href="#tutoriales">Tutoriales</a>
+        <a href="#faq">Preguntas frecuentes</a>
+        <a href="https://registra-me.vercel.app" target="_blank" rel="noopener">Acceso a la plataforma</a>
+        <a href="https://www.youtube.com/watch?v=TU_VIDEO_AQUI" target="_blank" rel="noopener">Video presentación</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a class="contact-link" href="https://wa.me/50671023115" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          +506 7102 3115
+        </a>
+        <a class="contact-link" href="mailto:nelson.rmontalvan@gmail.com">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          nelson.rmontalvan@gmail.com
+        </a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 RegistraME Platform. Desarrollado con altos estándares de calidad.</p>
+      <p class="footer-credit">Desarrollado por <strong>Ing. Nelson Rodríguez Montalván</strong></p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/50671023115?text=Hola%20Ing.%20Nelson%2C%20quiero%20informaci%C3%B3n%20sobre%20RegistraME%20V-Pro" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="wa-label">¿Hablamos?</span>
+  </a>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Vista previa de captura">
+    <button class="lightbox-close" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M18 6 6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <figure class="lightbox-body">
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-cap"></figcaption>
+    </figure>
+  </div>
+
+  <div class="bottom-fade" aria-hidden="true"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
